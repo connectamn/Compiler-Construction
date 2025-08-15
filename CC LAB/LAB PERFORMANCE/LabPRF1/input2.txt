@@ -1,0 +1,23 @@
+int main() {
+    int num;
+    char choice;
+
+    do {
+        printf("Enter an integer to see its multiplication table: ");
+        scanf("%d", &num);
+
+        printf("Multiplication Table for %d:\n", num);
+
+        for (int i = 1; i <= 10; i++) {
+            printf("%d x %d = %d\n", num, i, num * i);
+        }
+
+        printf("\nDo you want to calculate another multiplication table? (y/n): ");
+        scanf(" %c", &choice); 
+
+    } while (choice == 'y' || choice == 'Y'); 
+
+    printf("Exiting program. Goodbye!\n");
+
+    return 0;
+}

@@ -1,0 +1,88 @@
+int -> INT
+main -> MAIN_FUNC
+( -> LP
+) -> RP
+
+{ -> LB
+
+
+float -> FLOAT
+b -> ID
+= -> ASSIGN
+2.5 -> FLOAT_NUM
+; -> SEMI
+
+Int -> INT
+a -> ID
+= -> ASSIGN
+10 -> NUMBER
+; -> SEMI
+
+char -> CHAR
+c -> ID
+= -> ASSIGN
+'a' -> Single_char
+; -> SEMI
+
+Int -> INT
+aq -> ID
+; -> SEMI
+
+
+double -> DOUBLE
+exp -> ID
+= -> ASSIGN
+-10.9e-27 -> SCI_NUM
+; -> SEMI
+
+
+for -> ID
+( -> LP
+int -> INT
+i -> ID
+= -> ASSIGN
+0 -> NUMBER
+; -> SEMI
+i -> ID
+< -> GR
+= -> ASSIGN
+10 -> NUMBER
+; -> SEMI
+i -> ID
+++ -> INC
+) -> RP
+{ -> LB
+
+printf -> PRINTF
+( -> LP
+"The Number is : %d" -> STRING
+, -> COMA
+i -> ID
+) -> RP
+; -> SEMI
+
+scanf -> SCANF
+( -> LP
+"%d" -> STRING
+, -> COMA
+& -> AMPERSAND
+aq -> ID
+) -> RP
+; -> SEMI
+
+A -> ID
+= -> ASSIGN
+A -> ID
+% -> PERCENT/MOD
+5 -> NUMBER
+; -> SEMI
+
+} -> RB
+
+
+
+return -> RETURN
+0 -> NUMBER
+; -> SEMI
+
+} -> RB

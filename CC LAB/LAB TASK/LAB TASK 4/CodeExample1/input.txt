@@ -1,0 +1,9 @@
+int a;
+char a;
+
+ double c = 5;
+
+if(b > 3)
+{
+    d = a + c;
+}

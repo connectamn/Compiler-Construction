@@ -1,0 +1,18 @@
+int main() {
+    int age;
+
+    printf("Enter your age: ");
+    scanf("%d", &age);
+
+    if (age < 13) {
+        printf("Category: Child\n");
+    } else if (age >= 13 && age <= 19) {
+        printf("Category: Teenager\n");
+    } else if (age > 19 && age <= 64) {
+        printf("Category: Adult\n");
+    } else {
+        printf("Category: Senior\n");
+    }
+
+    return 0;
+}

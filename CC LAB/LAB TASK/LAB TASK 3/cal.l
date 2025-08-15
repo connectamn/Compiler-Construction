@@ -1,0 +1,32 @@
+%option noyywrap
+
+%{
+    #include "cal.tab.h"
+    #include <stdlib.h>
+%}
+
+
+letter [a-zA-Z]
+digit [0-9]
+delim [ \t]
+under [_]
+num {digit}{digit}*
+float_num {num}*[.]{num}
+
+
+
+%%
+
+{delim} {}
+{num} {yylval = atoi(yytext); return(INT_NUM);}
+{float_num} {yylval = atof(yytext); return(FLOAT_NUM);}
+
+"int" {return (INT_TYPE);}
+"float" {return (FLOAT_TYPE);}
+({under}|{letter})({under}|{letter}|{digit})* {return (ID);}
+
+";" {return (SEMI);}
+"=" {return (ASSIGN);}
+
+%%
+
